@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.feiyu.viewpagertest.MainActivity">
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="确定" />
+
+    <Button
+        android:id="@+id/btn_begin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="开始滑动" />
+
+    <com.feiyu.viewpagertest.RobotViewpager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingEnd="@dimen/viewpager_padding"
+        android:paddingLeft="@dimen/viewpager_padding"
+        android:paddingRight="@dimen/viewpager_padding"
+        android:paddingStart="@dimen/viewpager_padding">
+
+    </com.feiyu.viewpagertest.RobotViewpager>
+</LinearLayout>
